@@ -1,0 +1,29 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "Sample Events App NodeJS Web Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "SERVER=http://localhost:8082 node server.js",
+    "test": "SERVER=http://localhost:8082 nyc mocha --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^2.0.10",
+    "@types/express": "^4.17.8",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nock": "^13.0.5",
+    "nyc": "^15.1.0",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  }
+}
